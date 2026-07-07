@@ -125,3 +125,73 @@ ul li a{
 .what-id-do-card-container .what-i-do-card p{
     color: rgb(218, 99, 99);
     font-size: 15px;
+}
+.my-amaging-parent{
+    text-align: center;
+}
+.gallary{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six";
+}
+.gallary img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   }
+  
+.box-1{
+    grid-area: one;
+}
+.box-2{
+   grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+ grid-area: four;
+}
+.box-5{
+   grid-area: five;
+}
+.box-6{
+   grid-area: six;
+}
+/* footer style */
+footer{
+    text-align: center;
+    margin-top: 80px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgb(228, 203, 174);
+     padding: 10px; 
+    
+}
+
+footer form{
+     cursor: pointer;
+}
+.footer-left{
+   margin:10px 0;
+}
+
+footer form input{
+ border:none;
+ outline: none;
+ background-color: white;
+ padding: 8px 15px;
+ border-radius: 10px;
+ display: block;
+ width: 100%;
+ margin-bottom: 8px;
+  
+}
